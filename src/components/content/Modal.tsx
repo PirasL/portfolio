@@ -39,6 +39,7 @@ export default function Modal({ index, isToggled, closeModalFn }: ModalProps) {
             fill
             alt="projet image"
             className="object-cover object-top"
+            sizes=""
           />
         </div>
         <div className="mt-6">

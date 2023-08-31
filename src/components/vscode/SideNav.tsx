@@ -12,46 +12,46 @@ export default function SideNavbar() {
         <div className="flex h-12 w-full items-center justify-center border-l-[2px] border-[#FFFFFF]">
           <Image
             src={folder}
-            width={27}
-            height={27}
+            width={0}
+            height={0}
             alt="folder"
-            className="invert filter"
+            className="h-7 w-auto  invert filter"
           />
         </div>
         <div className="relative flex h-12 w-full items-center justify-center py-3">
           <Image
             src={search}
-            width={40}
-            height={40}
+            width={0}
+            height={0}
             alt="search logo"
-            className=" invert-[.50] filter"
+            className=" h-10 w-auto  invert-[.50] filter"
           />
         </div>
         <div className="relative flex h-12 w-full items-center justify-center py-3 hover:text-white">
           <Image
             src={source}
             alt="search logo"
-            width={27}
-            height={27}
-            className="invert-[.50] filter  "
+            width={0}
+            height={0}
+            className="h-7 w-auto invert-[.50] filter  "
           />
         </div>
         <div className="relative flex h-12 w-full items-center justify-center py-3 hover:text-white">
           <Image
             src={play}
             alt="search logo"
-            width={27}
-            height={27}
-            className="invert-[.50] filter"
+            width={0}
+            height={0}
+            className="h-7 w-auto invert-[.50] filter "
           />
         </div>
         <div className="relative flex h-12 w-full items-center justify-center py-3 hover:text-white">
           <Image
             src={cubes}
-            width={27}
-            height={27}
+            width={0}
+            height={0}
             alt="search logo"
-            className="invert-[.50] filter"
+            className="h-7 w-auto invert-[.50] filter "
           />
         </div>
       </div>

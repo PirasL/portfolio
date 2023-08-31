@@ -18,7 +18,6 @@ export default function FilesContainer() {
 }
 
 function FilesDropDown() {
-  //   const { setDisplayedComponent } = useTabContext();
   return (
     <>
       {files.map((file) => (
@@ -35,15 +34,13 @@ function FilesDropDown() {
               <p
                 key={child.name}
                 className="flex h-7 items-center pl-2 text-gray-300 hover:bg-[#37373d]"
-                onClick={() => {
-                  //   setDisplayedComponent(child.name.split(".")[0].toLowerCase());
-                }}
               >
                 <Image
                   src={child.icon}
                   alt={"vscode logo"}
-                  width={21}
-                  height={10}
+                  width={0}
+                  height={0}
+                  className="h-7 w-auto"
                 />
                 {child.name}
               </p>

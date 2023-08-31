@@ -23,6 +23,7 @@ function ProjectCard({
     <div className="group relative flex  h-full w-full cursor-pointer flex-col  overflow-hidden rounded-lg  phone:h-[260px] phone:w-full phone:max-w-[500px]">
       <Image
         src={img}
+        sizes="300px"
         fill
         alt="thumbnail"
         className="bg-white  object-cover  object-top group-hover:z-10 "
@@ -85,28 +86,3 @@ export default function Project() {
     </div>
   );
 }
-
-// function ProjectCard({ name, description, img, tags }: ProjectCardProps) {
-//   return (
-//     <div className=" box-border flex  w-[350px]  cursor-pointer flex-col overflow-hidden rounded-lg border-[3px] border-white/5 p-2">
-//       <div className="relative mb-5 h-40 w-full overflow-hidden rounded-lg bg-red-500 ">
-//         <Image src={img} alt={"fdssd"} fill />
-//       </div>
-//       <span className="mb-5 text-2xl">{name}</span>
-//       <p className="mb-8 h-28 ">{description}</p>
-//       <div className="wrap bg-slate mb-6 flex grow flex-wrap items-center justify-center gap-3">
-//         {tags.map((tag) => (
-//           <div
-//             className="flex h-5 items-center justify-center rounded-lg bg-lightGrey px-4"
-//             key={tag}
-//           >
-//             {tag}
-//           </div>
-//         ))}
-//       </div>
-//       <a className="flex min-w-[10px] items-center gap-6">
-//         Github <Image src={github} alt={"github icon"} width={25} height={25} />
-//       </a>
-//     </div>
-//   );
-// }
