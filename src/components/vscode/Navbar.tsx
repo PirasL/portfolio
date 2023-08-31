@@ -1,5 +1,5 @@
 import Image from "next/image";
-import vsclogo from "/icons/vsclogo.png";
+import vsclogo from "/public/icons/vsclogo.png";
 
 export default function Navbar() {
   return (
