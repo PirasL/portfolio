@@ -12,7 +12,7 @@ export default function Index() {
           <span className="text-xl text-lightBlue phone:text-center phone:text-base">
             Bienvenue sur mon portfolio.
           </span>
-          <p className=" text-[50px] tracking-tighter phone:text-[35px]">
+          <p className=" text-[50px] tracking-tighter phone:text-center phone:text-[35px]">
             <span className="phone:hidden"> Je suis </span>
             <span className="m-0 p-0 text-left phone:w-full phone:text-center">
               <span className="bg-gradient-to-r from-lightBlue to-darkBlue bg-clip-text text-[70px] text-transparent   phone:text-center phone:text-[55px]">
@@ -20,7 +20,7 @@ export default function Index() {
                 <br />
               </span>
             </span>
-            <span className="phone:text-center ">
+            <span className="w-full">
               Développeur <br className="tablet:hidden desktop:hidden" /> Full
               Stack
             </span>
@@ -105,7 +105,7 @@ export default function Index() {
         </div>
         <div className="relative tablet:hidden">
           <div className=" absolute left-20 top-20 h-96 w-60 bg-[#333333]  xl:h-96 xl:w-96"></div>
-          <div className=" relative h-96 w-60 bg-[url('https://images.unsplash.com/photo-1619016984925-725dfa1478d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-center xl:h-96 xl:w-96"></div>
+          <div className=" relative h-96 w-60 bg-[url('/images/swiss.jpeg')] bg-center xl:h-96 xl:w-96"></div>
         </div>
       </div>
     </div>

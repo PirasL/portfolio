@@ -6,10 +6,10 @@ const TabContext = createContext();
 // @ts-ignore
 export function TabContextProvider({ children }) {
   const [openTab, setOpenTab] = useState([
-    { name: "index.html", icon: "html" },
-    { name: "style.css", icon: "css" },
-    { name: "ABOUTME.md", icon: "css" },
-    { name: "projects.json", icon: "css" },
+    { name: "index.html", icon: "html", anchor: "#index" },
+    { name: "project.css", icon: "css", anchor: "#project" },
+    { name: "ABOUTME.md", icon: "css", anchor: "#aboutme" },
+    { name: "contact.json", icon: "css", anchor: "#contact" },
   ]);
 
   const [displayedComponent, setDisplayedComponent] = useState("index");

@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <div
-      className="section grid-cols grid h-auto w-full snap-center snap-always grid-cols-2 items-center justify-center  gap-6 bg-[#1e1e1e] p-20 font-raleway text-white xl:h-[calc(100vh-90px)] phone:grid-cols-1 phone:grid-rows-1 tablet:p-5 "
+      className="section grid-cols grid h-[calc(100vh-90px)] w-full snap-center snap-always grid-cols-2 items-center justify-center  gap-6 bg-[#1e1e1e] p-20 font-raleway text-white xl:h-[calc(100vh-90px)] phone:grid-cols-1 phone:grid-rows-1 tablet:p-5 "
       id="contact"
     >
       <div className=" ">

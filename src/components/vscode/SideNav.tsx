@@ -9,7 +9,7 @@ export default function SideNavbar() {
   return (
     <div className="flex  w-full flex-col items-center bg-[#333333] text-gray-400 phone:hidden">
       <div className="flex h-full w-full flex-col items-center  ">
-        <div className="flex h-12 w-full items-center justify-center border-l-[2px] border-[#FFFFFF]">
+        <div className="flex h-12 w-full items-center justify-center border-l-[2px] border-l-transparent 2xl:border-l-white">
           <Image
             src={folder}
             width={0}
@@ -30,7 +30,7 @@ export default function SideNavbar() {
         <div className="relative flex h-12 w-full items-center justify-center py-3 hover:text-white">
           <Image
             src={source}
-            alt="search logo"
+            alt="git logo"
             width={0}
             height={0}
             className="h-7 w-auto invert-[.50] filter  "
@@ -39,7 +39,7 @@ export default function SideNavbar() {
         <div className="relative flex h-12 w-full items-center justify-center py-3 hover:text-white">
           <Image
             src={play}
-            alt="search logo"
+            alt="debug logo"
             width={0}
             height={0}
             className="h-7 w-auto invert-[.50] filter "
@@ -50,7 +50,7 @@ export default function SideNavbar() {
             src={cubes}
             width={0}
             height={0}
-            alt="search logo"
+            alt="extension logo"
             className="h-7 w-auto invert-[.50] filter "
           />
         </div>
