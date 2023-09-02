@@ -20,8 +20,6 @@ export default function ContactForm() {
   const [messageSent, setMessageSent] = useState(false);
 
   async function onSubmit(data: FieldValues) {
-    console.log(data);
-
     mutate({
       nom: data.nom,
       message: data.message,
@@ -147,7 +145,7 @@ export default function ContactForm() {
         </button>
         {messageSent && (
           <p className="text-center text-green-500">
-            Message envoyé, Je vous contacterai dans les plus brefs délais
+            Message envoyé. Je vous contacterai dans les plus brefs délais
           </p>
         )}
       </div>
