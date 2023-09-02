@@ -55,12 +55,11 @@ export default function Project() {
 
   return (
     <div
-      className=" section  flex  h-[calc(100vh-90px)] w-full snap-center snap-always flex-wrap items-center justify-center bg-[#1e1e1e] p-10 font-raleway text-white phone:h-auto phone:p-4"
+      className=" section  m-auto flex h-[calc(100vh-90px)]  w-full  snap-center snap-always flex-wrap items-center justify-center bg-[#1e1e1e] p-10 font-raleway text-white phone:h-auto phone:p-4"
       id="project"
     >
-      <div className="flex h-full flex-col justify-center">
+      <div className="flex h-full max-w-7xl flex-col justify-center">
         <h1 className="mb-10 text-[50px]">Projets. </h1>
-
         <div className="relative grid h-1/2 w-full flex-wrap items-center justify-center gap-7 sm:h-full sm:grid-cols-2 md:h-full md:grid-cols-2  lg:h-[470px] lg:grid-cols-2   xl:h-96 xl:grid-cols-4 phone:grid-cols-1">
           {projects.map((el, id) => (
             <ProjectCard

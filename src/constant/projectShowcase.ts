@@ -19,12 +19,11 @@ export const projects = [
   {
     name: "Nina Carducci",
     github: "https://github.com/PirasL/nina",
-    image: "/images/projets/ninacarducci.jpg",
+    image: "/images/projets/nina.png",
     thumbnailDescription: "KDFSFS",
     description:
       "Optimisation complète du site, focalisée sur deux axes clés : les performances et le référencement. ",
     tags: [
-      "Node",
       "Javascript",
       "HTML",
       "CSS",
@@ -36,9 +35,9 @@ export const projects = [
   {
     name: "Portfolio",
     github: "https://github.com/PirasL/portfolio",
-    image: "/images/projets/kasa.png",
+    image: "/images/projets/svalbard.jpeg",
     thumbnailDescription: "KDFSFS",
     description: "Création de mon portfolio",
-    tags: ["NextJs", "tRPC", "Typescript", "Tailwind", "Responsive"],
+    tags: ["NextJs", "tRPC", "Typescript", "Tailwind"],
   },
 ];
