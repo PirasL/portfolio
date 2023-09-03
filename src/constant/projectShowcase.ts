@@ -13,7 +13,7 @@ export const projects = [
     github: "https://github.com/PirasL/kasa",
     image: "/images/projets/kasa.png",
     thumbnailDescription: "KDFSFS",
-    description: "Kasa est un site de location",
+    description: "Création d'un site de location immobillière en ReactJs.",
     tags: ["React", "HTML", "CSS", "OpenClassrooms"],
   },
   {
