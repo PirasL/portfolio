@@ -9,7 +9,7 @@ export default function useScrollModifier() {
     if (window.location.hash) {
       setIndex(sections.indexOf(window.location.hash.substr(1)));
     }
-    document.onwheel = (e) => fn(e);
+    document.onwheel = (e) => handleScroll(e);
   }, []);
 
   function scrollDown() {
@@ -30,11 +30,12 @@ export default function useScrollModifier() {
       document.location.replace(`http://localhost:3000/#${sections[index]}`);
     }
   }
-  function fn(e: WheelEvent) {
+
+  function handleScroll(e: WheelEvent) {
     if (window.innerWidth < 640) {
       return;
     } else {
-      function scrollHandler(deltaY: number) {
+      function performScroll(deltaY: number) {
         onCooldown = true;
         if (deltaY === -100) {
           scrollUp();
@@ -42,7 +43,7 @@ export default function useScrollModifier() {
           scrollDown();
         }
       }
-      !onCooldown && scrollHandler(e.deltaY);
+      !onCooldown && performScroll(e.deltaY);
     }
   }
 }
