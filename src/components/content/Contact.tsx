@@ -8,7 +8,7 @@ export default function Contact() {
       className="section grid-cols grid h-[calc(100vh-90px)] w-full snap-center snap-always grid-cols-2 items-center justify-center  gap-6 bg-[#1e1e1e] p-20 font-raleway text-white xl:h-[calc(100vh-90px)] phone:grid-cols-1 phone:grid-rows-1 tablet:p-5 "
       id="contact"
     >
-      <div className=" ">
+      <div>
         <div className="h-auto w-full ">
           <span className=" text-[40px] xl:mb-10 phone:text-3xl tablet:text-center">
             Travaillons ensemble !
