@@ -6,7 +6,25 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 export default function ContactForm() {
-  const { mutate } = api.mail.sendMail.useMutation();
+  const [error, setError] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
+
+  const { mutate } = api.mail.sendMail.useMutation({
+    onSuccess: () => {
+      reset();
+      setMessageSent(true);
+      setTimeout(() => {
+        setMessageSent(false);
+      }, 30000);
+      reset();
+    },
+    onError: () => {
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 30000);
+    },
+  });
 
   const {
     register,
@@ -17,8 +35,6 @@ export default function ContactForm() {
     resolver: zodResolver(formSchema),
   });
 
-  const [messageSent, setMessageSent] = useState(false);
-
   async function onSubmit(data: FieldValues) {
     mutate({
       nom: data.nom,
@@ -27,11 +43,6 @@ export default function ContactForm() {
       email: data.email,
       objet: data.objet,
     });
-    reset();
-    setMessageSent(true);
-    setTimeout(() => {
-      setMessageSent(false);
-    }, 30000);
   }
   return (
     <form
@@ -145,7 +156,12 @@ export default function ContactForm() {
         </button>
         {messageSent && (
           <p className="text-center text-green-500">
-            Message envoyé. Je vous contacterai dans les plus brefs délais
+            Message envoyé. Je vous contacterai dans les plus brefs délais.
+          </p>
+        )}
+        {error && (
+          <p className="text-center text-green-500">
+            Une erreur s'est produite, veuillez réessayer plus tard.
           </p>
         )}
       </div>

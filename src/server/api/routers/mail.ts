@@ -22,12 +22,13 @@ export const mailRouter = createTRPCRouter({
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
-      console.log("hey");
       if (error) {
         console.error("Error sending email:", error);
       } else {
         console.log("Email sent:", info.response);
+        return info;
       }
     });
+    return "fdsf";
   }),
 });
