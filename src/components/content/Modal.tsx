@@ -23,9 +23,13 @@ export default function Modal({ index, isToggled, closeModalFn }: ModalProps) {
           src={play}
           alt="close icon"
           width={25}
-          className="invert filter"
+          className="cursor-pointer invert filter"
+          onClick={() => closeModalFn(false)}
         />{" "}
-        <p className="text-lg font-bold" onClick={() => closeModalFn(false)}>
+        <p
+          className="cursor-pointer text-lg font-bold"
+          onClick={() => closeModalFn(false)}
+        >
           Fermer
         </p>
       </div>
@@ -33,7 +37,7 @@ export default function Modal({ index, isToggled, closeModalFn }: ModalProps) {
         <div>
           <h2 className="text-2xl font-extrabold">{data?.name}</h2>
         </div>
-        <div className="relative mt-8 h-[300px] w-full overflow-hidden rounded-xl bg-red-400">
+        <div className="relative mt-8 h-[300px] w-full overflow-hidden rounded-xl">
           <Image
             src={data?.image!}
             fill

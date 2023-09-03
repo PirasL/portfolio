@@ -29,8 +29,8 @@ function ProjectCard({
         className="bg-white  object-cover  object-top group-hover:z-10 "
         onClick={toggleModal}
       />
-      <div className=" pointer-events-none flex h-full w-full max-w-7xl flex-col-reverse bg-gradient-to-b from-white/0 to-black/50 p-4 group-hover:z-20 tablet:z-20">
-        <div>
+      <div className=" group pointer-events-none flex h-full w-full max-w-7xl flex-col-reverse bg-gradient-to-b from-white/0 to-black/70 p-4 group-hover:z-20 tablet:z-20">
+        <div className=" ease invisible translate-y-full duration-300 group-hover:visible group-hover:translate-y-0">
           <h2 className="font-raleway text-2xl  font-bold">{name}</h2>
           <p>{description}</p>
           <div className=" mt-3 flex flex-wrap gap-2 ">
