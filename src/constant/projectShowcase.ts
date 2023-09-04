@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "Argent Bank",
-    github: "https://github.com/PiR32534ERE/ArgentBank-website",
+    github: "https://github.com/PirasL/ArgentBank-website",
     image: "/images/projets/argentBank.png",
     description:
       "Création d'une application web responsive. Implémentation de Redux. ",
@@ -9,14 +9,14 @@ export const projects = [
   },
   {
     name: "Kasa",
-    github: "https://github.com/PiR32534ERE/kasa",
+    github: "https://github.com/PirasL/kasa",
     image: "/images/projets/kasa.png",
     description: "Création d'un site de location immobillière en ReactJs.",
     tags: ["React", "HTML", "CSS", "OpenClassrooms"],
   },
   {
     name: "Nina Carducci",
-    github: "https://github.com/PiR32534ERE/nina",
+    github: "https://github.com/PirasL/nina",
     image: "/images/projets/nina.png",
     description:
       "Optimisation complète du site, focalisée sur deux axes clés : les performances et le référencement. ",
@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     name: "Portfolio",
-    github: "https://github.com/PiR32534ERE/portfolio",
+    github: "https://github.com/PirasL/portfolio",
     image: "/images/swiss.jpeg",
     description: "Création de mon portfolio",
     tags: ["NextJs", "tRPC", "Typescript", "Tailwind"],
