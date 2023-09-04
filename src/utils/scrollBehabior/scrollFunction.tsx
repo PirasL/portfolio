@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useAppContext } from "~/context/TabContext";
 
 export default function useScrollModifier() {
+  const { toggleModal, setToggleModal } = useAppContext();
   let sections = ["index", "project", "aboutme", "contact"];
   let [index, setIndex] = useState<number>(0);
   let onCooldown = false;
@@ -36,6 +38,7 @@ export default function useScrollModifier() {
       return;
     } else {
       function performScroll(deltaY: number) {
+        setToggleModal(false);
         onCooldown = true;
         if (deltaY === -100) {
           scrollUp();
