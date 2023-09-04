@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function AboutMe() {
   return (
     <div
-      className="section grid h-[calc(100vh-90px)] snap-center snap-always grid-cols-6  grid-rows-6 items-center justify-center bg-[#1e1e1e] p-10 font-raleway text-white  phone:h-auto"
+      className="section grid h-[calc(100vh-90px)] snap-center snap-always grid-cols-6  grid-rows-6 items-center justify-center bg-[#1e1e1e] p-10 font-raleway text-white  tablet:h-auto"
       id="aboutme"
     >
       <div className="relative col-span-3  row-span-6 hidden h-full items-center justify-center lg:col-span-2 lg:flex xl:col-span-3 xl:flex">

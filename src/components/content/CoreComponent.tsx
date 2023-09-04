@@ -8,7 +8,7 @@ import useScrollModifier from "../../utils/scrollBehabior/scrollFunction";
 export default function CoreComponent() {
   useScrollModifier();
   return (
-    <div className="h-[calc(100vh-90px)] snap-y snap-mandatory overflow-hidden scroll-smooth  phone:h-auto  phone:snap-none">
+    <div className="h-[calc(100vh-90px)] snap-y snap-mandatory overflow-hidden scroll-smooth phone:h-auto tablet:snap-none  tablet:overflow-auto">
       <Index />
       <Project />
       <AboutMe />

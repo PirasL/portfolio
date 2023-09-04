@@ -5,9 +5,9 @@ export default function Index() {
   return (
     <div
       id="index"
-      className="section box-border  flex h-[calc(100vh-90px)] w-full snap-center snap-always bg-[#1e1e1e] font-raleway  text-white phone:h-auto phone:items-center phone:justify-center phone:px-4 phone:pt-4"
+      className="section box-border  flex h-[calc(100vh-90px)] w-full snap-center snap-always bg-[#1e1e1e] font-raleway  text-white phone:items-center phone:justify-center phone:px-4 phone:pt-4 tablet:h-auto"
     >
-      <div className="flex w-full items-center justify-center gap-8">
+      <div className="flex w-full items-center justify-center gap-8 tablet:mt-7">
         <div className=" flex  w-[600px] flex-col font-sans font-bold text-white 2xl:pr-14 phone:w-full ">
           <span className="text-xl text-lightBlue phone:text-center phone:text-base">
             Bienvenue sur mon portfolio.

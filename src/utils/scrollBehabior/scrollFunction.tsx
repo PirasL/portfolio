@@ -32,7 +32,7 @@ export default function useScrollModifier() {
   }
 
   function handleScroll(e: WheelEvent) {
-    if (window.innerWidth < 640) {
+    if (window.innerWidth < 1024) {
       return;
     } else {
       function performScroll(deltaY: number) {
