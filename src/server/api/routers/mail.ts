@@ -14,10 +14,9 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// 2 requests par minute
 const ratelimit = new Ratelimit({
   redis: Redis.fromEnv(),
-  limiter: Ratelimit.slidingWindow(2, "1 m"),
+  limiter: Ratelimit.slidingWindow(2, "2 m"),
   analytics: true,
 });
 
