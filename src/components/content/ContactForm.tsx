@@ -160,7 +160,7 @@ export default function ContactForm() {
           </p>
         )}
         {error && (
-          <p className="text-center text-green-500">
+          <p className="text-center text-red-500">
             Une erreur s'est produite, veuillez réessayer plus tard.
           </p>
         )}
