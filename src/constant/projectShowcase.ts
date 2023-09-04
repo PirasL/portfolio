@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Argent Bank",
     github: "https://github.com/PiR32534ERE/ArgentBank-website",
-    image: "/images/projets/ArgentBank.png",
+    image: "/images/projets/argentBank.png",
     description:
       "Création d'une application web responsive. Implémentation de Redux. ",
     tags: ["ReactJs", "Redux", "RTKQuery", "Swagger ", "OpenClassrooms"],
