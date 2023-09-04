@@ -3,6 +3,7 @@ import github from "../../assets/github.svg";
 import { projects } from "../../constant/projectShowcase";
 import Image from "next/image";
 import Modal from "./Modal";
+import { useAppContext } from "~/context/TabContext";
 
 type ProjectCardProps = {
   name: string;
@@ -49,9 +50,9 @@ function ProjectCard({
 }
 
 export default function Project() {
+  const { toggleModal, setToggleModal, activeProject, setActiveProject } =
+    useAppContext();
   const [modalToggler, setModalToggler] = useState(false);
-
-  const [activeProject, setActiveProject] = useState(0);
 
   return (
     <div
@@ -75,7 +76,7 @@ export default function Project() {
               tags={el.tags}
               toggleModal={() => {
                 setActiveProject(id);
-                setModalToggler(true);
+                setToggleModal(true);
               }}
             />
           ))}

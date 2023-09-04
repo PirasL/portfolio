@@ -4,7 +4,7 @@ import { useState, createContext, useContext } from "react";
 const TabContext = createContext();
 
 // @ts-ignore
-export function TabContextProvider({ children }) {
+export function ContextProvider({ children }) {
   const [openTab, setOpenTab] = useState([
     { name: "index.html", icon: "html", anchor: "#index" },
     { name: "project.css", icon: "css", anchor: "#project" },
@@ -12,15 +12,26 @@ export function TabContextProvider({ children }) {
     { name: "contact.json", icon: "css", anchor: "#contact" },
   ]);
 
+  const [toggleModal, setToggleModal] = useState(false);
+  const [activeProject, setActiveProject] = useState(0);
   const [displayedComponent, setDisplayedComponent] = useState("index");
 
   return (
     <TabContext.Provider
-      value={{ openTab, setOpenTab, displayedComponent, setDisplayedComponent }}
+      value={{
+        openTab,
+        setOpenTab,
+        displayedComponent,
+        setDisplayedComponent,
+        toggleModal,
+        setToggleModal,
+        activeProject,
+        setActiveProject,
+      }}
     >
       {children}
     </TabContext.Provider>
   );
 }
 
-export const useTabContext = () => useContext(TabContext);
+export const useAppContext = () => useContext(TabContext);

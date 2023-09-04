@@ -2,6 +2,7 @@ import React from "react";
 import play from "/public/icons/interface/play.png";
 import Image from "next/image";
 import { projects } from "../../constant/projectShowcase";
+import { useAppContext } from "~/context/TabContext";
 
 type ModalProps = {
   index: number;
@@ -10,12 +11,12 @@ type ModalProps = {
 };
 
 export default function Modal({ index, isToggled, closeModalFn }: ModalProps) {
-  const data = projects[index];
-
+  const { activeProject, toggleModal, setToggleModal } = useAppContext();
+  const data = projects[activeProject];
   return (
     <div
       className={`fixed right-0 top-0 z-50 flex h-screen w-[500px] flex-col justify-between overflow-y-auto bg-slate-900 duration-500 ease-in phone:w-full ${
-        isToggled === true ? "translate-x-0" : "translate-x-full"
+        toggleModal === true ? "translate-x-0" : "translate-x-full"
       } `}
     >
       <div className="w-full px-7">
@@ -29,7 +30,7 @@ export default function Modal({ index, isToggled, closeModalFn }: ModalProps) {
           />{" "}
           <p
             className="cursor-pointer text-lg font-bold"
-            onClick={() => closeModalFn(false)}
+            onClick={() => setToggleModal(false)}
           >
             Fermer
           </p>

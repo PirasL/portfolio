@@ -1,8 +1,8 @@
 import React from "react";
-import { useTabContext } from "../../context/TabContext";
+import { useAppContext } from "../../context/TabContext";
 
 export default function FileTabContainer() {
-  const { openTab, setOpenTab } = useTabContext();
+  const { openTab, setOpenTab } = useAppContext();
 
   interface TabItemProps {
     name: string;
