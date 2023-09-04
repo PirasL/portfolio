@@ -21,6 +21,7 @@ export default function ContactForm() {
     onError: () => {
       setError(true);
       setTimeout(() => {
+        setMessageSent(false);
         setError(false);
       }, 30000);
     },
