@@ -5,12 +5,12 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <div
-      className="section  h-[calc(100vh-90px)] w-full snap-center snap-always  gap-6 bg-[#1e1e1e] p-20 font-raleway text-white xl:h-[calc(100vh-90px)] phone:grid-cols-1 phone:grid-rows-1 tablet:p-5 "
+      className="section  flex h-[calc(100vh-90px)]  w-full snap-center snap-always items-center justify-center bg-[#1e1e1e] p-20 font-raleway text-white xl:h-[calc(100vh-90px)] phone:grid-cols-1 phone:grid-rows-1 tablet:p-5 "
       id="contact"
     >
-      <div className="m-auto grid w-full max-w-7xl grid-cols-2 items-center  gap-6">
-        <div className="grid-span-1">
-          <div className="h-auto w-full ">
+      <div className="m-auto grid h-full w-full max-w-7xl grid-cols-2 items-center justify-center gap-6 tablet:h-auto tablet:grid-cols-1 tablet:grid-rows-1 tablet:gap-0">
+        <div className="">
+          <div className="">
             <span className=" text-[40px] xl:mb-10 phone:text-3xl tablet:text-center">
               Travaillons ensemble !
             </span>
@@ -23,8 +23,8 @@ export default function Contact() {
               contacter par mail ou via le formulaire de contact.
             </p>
           </div>
-          <div className="phone:hidden">
-            <div className="grid grid-cols-2 items-center justify-center gap-6 2xl:mt-20">
+          <div className="tablet:hidden">
+            <div className="grid grid-cols-2 items-center justify-center gap-6 2xl:mt-20 ">
               <div className="mt-5 flex aspect-square max-w-[280px]  grow flex-col items-center justify-center rounded-lg lg:bg-[#252526]  xl:shadow-lg ">
                 <div className="rounded-lg  bg-slate-50/30 p-3">
                   <Image

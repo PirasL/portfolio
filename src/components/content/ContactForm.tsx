@@ -47,7 +47,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className=" mt-7 flex w-full flex-col gap-3 "
+      className=" mt-7 flex w-full flex-col gap-3  "
     >
       <div className="flex gap-5">
         <div className="flex grow flex-col">
