@@ -16,10 +16,10 @@ export default function Contact() {
             </span>
             <div className="relative -left-10 mt-10 h-1 w-1/5 bg-gradient-to-r from-lightBlue to-darkBlue phone:hidden tablet:hidden"></div>
             <div className="relative left-10 mt-5  h-1 w-1/5 bg-gradient-to-r from-lightBlue to-darkBlue phone:hidden tablet:hidden"></div>
-            <p className="text-md mt-5  ">
+            <p className="text-md mt-5 pr-5 ">
               Si vous avez des questions ou si vous souhaitez discuter de votre
               projet,
-              <br className="md:hidden phone:hidden" /> n'hésitez pas à me
+              <br className=" md:hidden phone:hidden" /> n'hésitez pas à me
               contacter par mail ou via le formulaire de contact.
             </p>
           </div>
