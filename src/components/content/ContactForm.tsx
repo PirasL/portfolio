@@ -20,8 +20,8 @@ export default function ContactForm() {
     },
     onError: () => {
       setError(true);
+      setMessageSent(false);
       setTimeout(() => {
-        setMessageSent(false);
         setError(false);
       }, 30000);
     },
