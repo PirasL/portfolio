@@ -72,7 +72,7 @@ export default function ContactForm() {
         </div>
         <div className="flex grow flex-col">
           <label
-            htmlFor="prenom "
+            htmlFor="prenom"
             className=" bg-gradient-to-r from-lightBlue to-darkBlue bg-clip-text font-bold text-transparent"
           >
             Prénom
@@ -98,6 +98,7 @@ export default function ContactForm() {
           E-mail
         </label>
         <input
+          autoComplete="email"
           id="email"
           placeholder="name@email.com"
           className="block h-10 w-full appearance-none rounded-md bg-hoverGray  px-5 leading-tight text-white focus:bg-white focus:text-gray-700 focus:outline-none"

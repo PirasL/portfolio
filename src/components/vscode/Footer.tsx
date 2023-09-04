@@ -9,8 +9,9 @@ export default function Footer() {
           <Image
             alt="warning logo"
             src={"/icons/errorLogo.svg"}
-            width={20}
-            height={20}
+            width={0}
+            height={0}
+            className="h-[20px] w-auto"
           />
           <span className="text-sm">0</span>
         </div>
@@ -37,18 +38,20 @@ export default function Footer() {
         <div className="flex h-full items-center justify-center px-2 text-sm hover:bg-white/20">
           {" "}
           <Image
-            alt="warning logo"
+            alt="feedback logo"
             src={"/icons/feedbackLogo.svg"}
-            width={14}
-            height={14}
+            width={0}
+            height={0}
+            className="h-[14px] w-auto"
           />
         </div>
         <div className="flex h-full items-center justify-center px-2 text-sm hover:bg-white/20">
           <Image
-            alt="warning logo"
+            alt="bell logo"
             src={"/icons/bell.svg"}
-            width={14}
-            height={14}
+            width={0}
+            height={0}
+            className="h-[14px] w-auto"
           />
         </div>
       </div>

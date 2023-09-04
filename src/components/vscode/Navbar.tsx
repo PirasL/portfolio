@@ -41,7 +41,11 @@ export default function Navbar() {
       <div className="flex items-center">
         <i className="fa-solid fa-arrow-left mx-2 rounded-md px-2 py-1 hover:bg-hoverGray"></i>
         <i className="fa-solid fa-arrow-right mx-2 rounded-md px-2 py-1 hover:bg-hoverGray"></i>
-        <input className="w-[30vw] rounded-md border-[1px] border-solid border-slate-600 bg-[#282c34]" />
+        <input
+          className="w-[30vw] rounded-md border-[1px] border-solid border-slate-600 bg-[#282c34]"
+          disabled
+          name="visual"
+        />
       </div>
       <div className="flex items-center justify-between">
         <div className="group flex h-10 w-12 items-center justify-center hover:bg-[#ffffff28] group-hover:text-white">

@@ -97,7 +97,7 @@ export default function Index() {
             </a>
 
             <div className="border-1 flex  h-10 w-48 cursor-pointer items-center justify-center rounded-md bg-darkBlue px-6 font-normal phone:w-full phone:max-w-sm">
-              <a href="path_to_file" download="proposed_file_name">
+              <a href="/assets/CV.pdf" download="Léo Piras CV">
                 Télécharger mon CV
               </a>
             </div>

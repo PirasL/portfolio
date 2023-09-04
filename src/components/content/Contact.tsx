@@ -25,7 +25,7 @@ export default function Contact() {
           </div>
           <div className="tablet:hidden">
             <div className="grid grid-cols-2 items-center justify-center gap-6 2xl:mt-20 ">
-              <div className="mt-5 flex aspect-square max-w-[280px]  grow flex-col items-center justify-center rounded-lg lg:bg-[#252526]  xl:shadow-lg ">
+              <a className="mt-5 flex aspect-square max-w-[280px]  grow flex-col items-center justify-center rounded-lg lg:bg-[#252526]  xl:shadow-lg ">
                 <div className="rounded-lg  bg-slate-50/30 p-3">
                   <Image
                     src={"/icons/mail.svg"}
@@ -37,7 +37,7 @@ export default function Contact() {
                 <p className="mt-2 text-sm font-bold underline ">
                   leo.piras@outlook.com
                 </p>
-              </div>
+              </a>
               <div className="mt-5 flex aspect-square max-w-[280px] grow flex-col items-center justify-center rounded-lg  lg:bg-[#252526]  lg:shadow-lg">
                 <div className="rounded-lg  bg-slate-50/30 p-2">
                   <Image

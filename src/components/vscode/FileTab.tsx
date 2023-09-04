@@ -34,7 +34,7 @@ export default function FileTabContainer() {
           onClick={deleteTab}
           data-tabname={name}
         >
-          <i className="fa-solid fa-xmark pointer-events-none hidden"></i>
+          X
         </div>
       </div>
     );
