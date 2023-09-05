@@ -10,6 +10,8 @@ export default function Home() {
     <>
       <Head>
         <title>Léo Piras</title>
+        <meta name="robots" content="noindex"></meta>
+        <meta name="googlebot" content="noindex"></meta>
         <meta name="description" content="Bienvenue sur mon portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
