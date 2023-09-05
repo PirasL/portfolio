@@ -20,7 +20,7 @@ export default function useScrollModifier() {
     }, 700);
     if (index < 3) {
       index++;
-      document.location.replace(`www.leo-piras.com/#${sections[index]}`);
+      document.location.replace(`./#${sections[index]}`);
     }
   }
   function scrollUp() {
@@ -29,7 +29,7 @@ export default function useScrollModifier() {
     }, 700);
     if (index > 0) {
       index--;
-      document.location.replace(`www.leo-piras.com/#${sections[index]}`);
+      document.location.replace(`./#${sections[index]}`);
     }
   }
 
