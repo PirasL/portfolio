@@ -21,7 +21,7 @@ function ProjectCard({
   toggleModal,
 }: ProjectCardProps) {
   return (
-    <div className="group relative flex  h-full w-full cursor-pointer flex-col  overflow-hidden rounded-lg  phone:h-[260px] phone:w-full phone:max-w-[500px]">
+    <div className="group relative flex  h-full w-full cursor-pointer flex-col overflow-hidden phone:h-[260px] phone:w-full phone:max-w-[500px]">
       <Image
         src={img}
         sizes="300px"
