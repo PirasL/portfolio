@@ -13,15 +13,15 @@ export default function AboutMe() {
           alt="svalbard"
           height={670}
           width={610}
-          className="  object h-[600px] object-cover object-[25%_50%]"
+          className="  object h-full object-cover object-[25%_50%]"
           src="/images/projets/svalbard.jpeg"
         />
       </div>
       <div className="grid-cols col-span-6  row-span-6 grid h-full max-w-2xl  sm:col-span-6 sm:ml-0 md:col-span-6 md:ml-6 md:pl-4 lg:col-span-4 lg:ml-0 xl:col-span-3">
         <div className=" relative flex w-full max-w-3xl flex-col  justify-center ">
           <span className="relative  text-3xl text-gray-400">Léo Piras</span>
-          <div className="relative  text-3xl text-white">
-            <h2 className="bg-gradient-to-r from-lightBlue to-darkBlue bg-clip-text text-5xl text-transparent">
+          <div className="relative   text-white">
+            <h2 className="bg-gradient-to-r from-lightBlue to-darkBlue bg-clip-text  text-5xl text-transparent ">
               Developpeur Web
             </h2>
           </div>

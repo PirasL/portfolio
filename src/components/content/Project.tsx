@@ -63,7 +63,7 @@ export default function Project() {
         className="flex h-full max-w-7xl flex-col justify-center
       "
       >
-        <h1 className="mb-10 text-[50px] tablet:mb-5 tablet:mt-5 tablet:text-4xl tablet:underline">
+        <h1 className="mb-10 text-[50px] text-xl md:text-3xl tablet:mb-5 tablet:mt-5 tablet:text-4xl tablet:underline">
           Projets.{" "}
         </h1>
         <div className="relative grid h-1/2 w-full flex-wrap items-center justify-center gap-7 sm:h-full sm:grid-cols-2 md:h-full md:grid-cols-2  lg:h-[470px] lg:grid-cols-2   xl:h-96 xl:grid-cols-4 phone:grid-cols-1">

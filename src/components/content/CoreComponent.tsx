@@ -3,7 +3,7 @@ import Index from "./Index";
 import AboutMe from "./AboutMe";
 import Project from "./Project";
 import Contact from "./Contact";
-import useScrollModifier from "../../utils/scrollBehabior/scrollFunction";
+import useScrollModifier from "../../utils/scrollFunction";
 
 export default function CoreComponent() {
   useScrollModifier();
